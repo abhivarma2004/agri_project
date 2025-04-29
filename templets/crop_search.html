@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crop Search - Agri InfoHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body class="bg-green-50 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-green-700">Agri InfoHub</div>
+    <div class="space-x-6 text-lg">
+      <a href="index.html" class="hover:text-green-600">Home</a>
+      <a href="about.html" class="hover:text-green-600">About</a>
+      <a href="crop_search.html" class="font-semibold text-green-700">Crop Search</a>
+      <a href="login.html" class="hover:text-green-600">Login</a>
+      <a href="signup.html" class="hover:text-green-600">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Search Section -->
+  <section class="p-10 text-center">
+    <h1 class="text-3xl font-bold text-green-800 mb-6">Search for Crop Information</h1>
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Enter crop name (e.g., rice, maize)" 
+      class="w-full max-w-xl px-4 py-3 rounded-lg border shadow focus:outline-none focus:ring-2 focus:ring-green-300"
+    />
+  </section>
+
+  <!-- Crop Info Display -->
+  <section class="px-6 pb-12">
+    <div id="cropInfo" class="max-w-4xl mx-auto bg-white rounded-lg shadow p-6 hidden">
+      <h2 class="text-2xl font-bold mb-4 text-green-700" id="cropName"></h2>
+      <p><strong>Season:</strong> <span id="season"></span></p>
+      <p><strong>Soil Type:</strong> <span id="soil"></span></p>
+      <p><strong>Climate:</strong> <span id="climate"></span></p>
+      <p><strong>Fertilizer:</strong> <span id="fertilizer"></span></p>
+      <p><strong>Harvest Time:</strong> <span id="harvest"></span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-4">
+    &copy; 2025 Agri InfoHub. Grow with Knowledge.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "rice": {
+      "season": "Kharif",
+      "soil": "Loamy, clayey",
+      "climate": "Warm, humid",
+      "fertilizer": "Urea, DAP",
+      "harvest": "120 days"
+    },
+    "wheat": {
+      "season": "Rabi",
+      "soil": "Well-drained loam",
+      "climate": "Cool, dry",
+      "fertilizer": "NPK",
+      "harvest": "100-120 days"
+    }
+  }
+  
